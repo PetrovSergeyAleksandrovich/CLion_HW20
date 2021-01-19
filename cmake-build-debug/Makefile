@@ -115,6 +115,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named task_3
+
+# Build rule for target.
+task_3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) task_3
+.PHONY : task_3
+
+# fast build rule for target.
+task_3\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_3.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_3.dir\build
+.PHONY : task_3\fast
+
+#=============================================================================
 # Target rules for targets named CLion_HW20
 
 # Build rule for target.
@@ -207,6 +220,33 @@ HW20_task_2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2.dir\HW20_task_2.cpp.s
 .PHONY : HW20_task_2.cpp.s
 
+HW20_task_3.obj: HW20_task_3.cpp.obj
+
+.PHONY : HW20_task_3.obj
+
+# target to build an object file
+HW20_task_3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_3.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_3.dir\HW20_task_3.cpp.obj
+.PHONY : HW20_task_3.cpp.obj
+
+HW20_task_3.i: HW20_task_3.cpp.i
+
+.PHONY : HW20_task_3.i
+
+# target to preprocess a source file
+HW20_task_3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_3.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_3.dir\HW20_task_3.cpp.i
+.PHONY : HW20_task_3.cpp.i
+
+HW20_task_3.s: HW20_task_3.cpp.s
+
+.PHONY : HW20_task_3.s
+
+# target to generate assembly for a file
+HW20_task_3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_3.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_3.dir\HW20_task_3.cpp.s
+.PHONY : HW20_task_3.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -245,12 +285,16 @@ help:
 	@echo ... CLion_HW20
 	@echo ... task_1
 	@echo ... task_2
+	@echo ... task_3
 	@echo ... HW20_task_1.obj
 	@echo ... HW20_task_1.i
 	@echo ... HW20_task_1.s
 	@echo ... HW20_task_2.obj
 	@echo ... HW20_task_2.i
 	@echo ... HW20_task_2.s
+	@echo ... HW20_task_3.obj
+	@echo ... HW20_task_3.i
+	@echo ... HW20_task_3.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

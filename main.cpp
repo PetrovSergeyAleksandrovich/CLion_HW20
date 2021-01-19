@@ -1,28 +1,21 @@
-//18.4 Сортировка Пузырьком
 #include <iostream>
-#include <vector>
 
-int main() {
+int main()
+{
+    char a[] = "Hello world";
+    char b[] = "wor";
 
-    std::vector <int> vec = {3, 4, -5, 11, 9, 2, 5, 8, 1, 0, 42, -15};
+    std::cout << *(a+1) << " " << a;
+    std::cout << *(b+1) << " " << b;
 
-    for (int i = 0; i < vec.size(); i++)
-    {
-        for (int j=0; j < vec.size()-i-1; j++)
-        {
-            if (vec[j] < vec[j + 1])
-            {
-                int tmp = vec[j];
-                vec[j] = vec[j + 1];
-                vec[j+1] = tmp;
-            }
-        }
-    }
 
-    for(int i = 0; i < vec.size(); i++)
-    {
-        std::cout << vec[i] << " ";
-    }
+
+//    int i = 0;
+//    while(*(a+i) != '\0')
+//    {
+//        std::cout << a[i] << " ";
+//        i++;
+//    }
 
     return 0;
 }
