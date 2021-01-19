@@ -37,23 +37,8 @@ int main()
     char b[] = "range";
     char c[] = "xyz";
 
-    if (substr(a, b))
-    {
-        std::cout << "true" << std::endl;
-    }
-    else
-    {
-        std::cout << "false" << std::endl;
-    }
-
-    if (substr(a, c))
-    {
-        std::cout << "true" << std::endl;
-    }
-    else
-    {
-        std::cout << "false" << std::endl;
-    }
+    (substr(a, b)) ? std::cout << "true" << std::endl : std::cout << "false" << std::endl;
+    (substr(a, c)) ? std::cout << "true" << std::endl : std::cout << "false" << std::endl;
 
     return 0;
 }

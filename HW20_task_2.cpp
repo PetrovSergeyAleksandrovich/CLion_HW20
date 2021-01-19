@@ -1,6 +1,6 @@
 #include <iostream>
 
-int* rotate_list(int* ptr)
+void rotate_list(int* ptr)
 {
     int tmp_list[10]={};
 
@@ -13,9 +13,7 @@ int* rotate_list(int* ptr)
     {
         *(ptr+i) = tmp_list[i];
     }
-    return tmp_list;
 }
-
 
 int main()
 {
