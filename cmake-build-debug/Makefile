@@ -166,6 +166,19 @@ task_2\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2.dir\build
 .PHONY : task_2\fast
 
+#=============================================================================
+# Target rules for targets named task_2v2
+
+# Build rule for target.
+task_2v2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) task_2v2
+.PHONY : task_2v2
+
+# fast build rule for target.
+task_2v2\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2v2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2v2.dir\build
+.PHONY : task_2v2\fast
+
 HW20_task_1.obj: HW20_task_1.cpp.obj
 
 .PHONY : HW20_task_1.obj
@@ -219,6 +232,33 @@ HW20_task_2.s: HW20_task_2.cpp.s
 HW20_task_2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2.dir\HW20_task_2.cpp.s
 .PHONY : HW20_task_2.cpp.s
+
+HW20_task_2_v2.obj: HW20_task_2_v2.cpp.obj
+
+.PHONY : HW20_task_2_v2.obj
+
+# target to build an object file
+HW20_task_2_v2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2v2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2v2.dir\HW20_task_2_v2.cpp.obj
+.PHONY : HW20_task_2_v2.cpp.obj
+
+HW20_task_2_v2.i: HW20_task_2_v2.cpp.i
+
+.PHONY : HW20_task_2_v2.i
+
+# target to preprocess a source file
+HW20_task_2_v2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2v2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2v2.dir\HW20_task_2_v2.cpp.i
+.PHONY : HW20_task_2_v2.cpp.i
+
+HW20_task_2_v2.s: HW20_task_2_v2.cpp.s
+
+.PHONY : HW20_task_2_v2.s
+
+# target to generate assembly for a file
+HW20_task_2_v2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task_2v2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\task_2v2.dir\HW20_task_2_v2.cpp.s
+.PHONY : HW20_task_2_v2.cpp.s
 
 HW20_task_3.obj: HW20_task_3.cpp.obj
 
@@ -285,6 +325,7 @@ help:
 	@echo ... CLion_HW20
 	@echo ... task_1
 	@echo ... task_2
+	@echo ... task_2v2
 	@echo ... task_3
 	@echo ... HW20_task_1.obj
 	@echo ... HW20_task_1.i
@@ -292,6 +333,9 @@ help:
 	@echo ... HW20_task_2.obj
 	@echo ... HW20_task_2.i
 	@echo ... HW20_task_2.s
+	@echo ... HW20_task_2_v2.obj
+	@echo ... HW20_task_2_v2.i
+	@echo ... HW20_task_2_v2.s
 	@echo ... HW20_task_3.obj
 	@echo ... HW20_task_3.i
 	@echo ... HW20_task_3.s

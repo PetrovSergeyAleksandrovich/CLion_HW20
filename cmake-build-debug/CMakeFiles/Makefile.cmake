@@ -51,4 +51,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/CLion_HW20.dir/DependInfo.cmake"
   "CMakeFiles/task_1.dir/DependInfo.cmake"
   "CMakeFiles/task_2.dir/DependInfo.cmake"
+  "CMakeFiles/task_2v2.dir/DependInfo.cmake"
   )

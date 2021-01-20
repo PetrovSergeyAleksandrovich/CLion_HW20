@@ -4,3 +4,4 @@ C:/Users/Poizone/CLion_HW20/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Poizone/CLion_HW20/cmake-build-debug/CMakeFiles/task_1.dir
 C:/Users/Poizone/CLion_HW20/cmake-build-debug/CMakeFiles/task_2.dir
 C:/Users/Poizone/CLion_HW20/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Poizone/CLion_HW20/cmake-build-debug/CMakeFiles/task_2v2.dir
